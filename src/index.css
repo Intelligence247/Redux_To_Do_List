@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    @apply m-0 p-0 box-border 
+}
+
+.body{
+    @apply bg-[#faf1e3] h-screen w-screen grid place-items-center 
+}
+main{
+    @apply lg:w-[25rem] min-h-[35rem] w-[100%] h-screen lg:h-auto bg-white lg:rounded-[20px] lg:py-4 pt-4 shadow-lg shadow-primaryblur
+}
+
+h1.title{
+    @apply w-max m-auto text-[2rem] mb-2
+}
