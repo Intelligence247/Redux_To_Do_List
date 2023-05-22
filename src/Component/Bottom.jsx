@@ -3,7 +3,7 @@ import Todo from './Todo'
 
 const Bottom = () => {
   return (
-    <div className='w-full px-4 overflow-y-auto overflow-x-hidden h-[15rem]'>
+    <div className='w-full px-4 overflow-y-auto overflow-x-hidden lg:h-[15rem] lg:max-[15rem]'>
         <Todo/>
         <Todo/>
         <Todo/>
@@ -14,3 +14,5 @@ const Bottom = () => {
 }
 
 export default Bottom
+
+// https://creative-gelato-39395b.netlify.app
