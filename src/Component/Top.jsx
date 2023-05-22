@@ -3,7 +3,7 @@ import InputC from './InputC'
 
 const Top = () => {
   return (
-    <div className='bg-primary px-4 flex flex-col gap-4 py-8 rounded-r-xl'> 
+    <div className='bg-primary px-4 flex flex-col gap-2 py-2 rounded-r-xl'> 
         <InputC
         placeholder={"Input Your Task"}
         Iheight={'h-8'}
@@ -31,6 +31,7 @@ const Top = () => {
         <div className='w-full grid place-content-center'>
 <button className='bg-orange w-[7rem] h-[2rem] grid place-items-center rounded-xl'>Create Tast</button>
 </div>
+<p className='errM text-red-500 text-center'>Input field must not be empty</p>
 
     </div>
   )

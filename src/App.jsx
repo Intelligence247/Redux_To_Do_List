@@ -4,6 +4,7 @@ import './App.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { decrease, increase, reset, addtwo } from './Redux/Action'
 import Top from './Component/Top'
+import Bottom from './Component/Bottom'
 
 function App() {
   const distpatch = useDispatch()
@@ -13,6 +14,7 @@ function App() {
       <main>
         <h1 className='title'>Create Task List</h1>
     <Top/>
+    <Bottom/>
       </main>
     </div>
   )
