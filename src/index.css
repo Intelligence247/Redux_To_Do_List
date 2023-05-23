@@ -3,22 +3,22 @@
 @tailwind utilities;
 
 *{
-    @apply m-0 p-0 box-border 
+    @apply m-0 p-0 box-border lg:text-base text-sm
 }
 
 .body{
     @apply bg-[#faf1e3] h-screen w-screen grid place-items-center 
 }
 main{
-    @apply lg:w-[25rem] min-h-[35rem] max-h-[40rem] w-[100%] h-screen lg:h-auto bg-white lg:rounded-[20px] lg:py-4 pt-4 shadow-lg shadow-primaryblur
+    @apply lg:w-[25rem] lg:h-[35rem] w-screen h-auto bg-white lg:rounded-[20px] lg:py-4 pt-4 shadow-lg shadow-primaryblur flex flex-col
 }
 
 h1.title{
-    @apply w-max m-auto text-[2rem] 
+    @apply w-max m-auto lg:text-[2rem] text-[2.5rem] lg:mb-2 mb-4 
 }
 
 *::-webkit-scrollbar{
-    @apply w-[6px] bg-primaryblur
+    @apply w-[3px] bg-primaryblur
 }
 *::-webkit-scrollbar-thumb{
     @apply bg-primary rounded-full

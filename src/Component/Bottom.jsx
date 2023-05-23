@@ -9,6 +9,11 @@ const Bottom = () => {
         <Todo/>
         <Todo/>
         <Todo/>
+        <Todo/>
+        <Todo/>
+        <Todo/>
+        <Todo/>
+        <Todo/>
     </div>
   )
 }
