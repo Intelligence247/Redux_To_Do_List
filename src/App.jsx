@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import { useDispatch, useSelector } from 'react-redux'
-import { decrease, increase, reset, addtwo } from './Redux/Action'
+// import { decrease, increase, reset, addtwo } from './Redux/Action'
 import Top from './Component/Top'
 import Bottom from './Component/Bottom'
 
@@ -28,3 +28,10 @@ export default App
 // End Time
 // Description
 
+
+/*  <h1>Counter</h1>
+        <p>{counter}</p>
+        <button onClick={() => distpatch(increase())}>increase</button>
+        <button onClick={() => distpatch(decrease())}>decrease</button>
+        <button onClick={() => distpatch(reset())}>reset</button>
+        <button onClick={() => distpatch(addtwo())}>AddTwo</button> */ 
