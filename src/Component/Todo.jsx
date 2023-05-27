@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Todo = () => {
+const Todo = ({}) => {
+  
   return (
     <div className='mt-4 flex lg:w-[23rem] w-full
     
@@ -12,8 +13,10 @@ const Todo = () => {
         </div>
     <div className='flex gap-4 flex-col w-[30%] items-center justify-between'>
         <div className='flex lg:gap-2 gap-1'>
-        <input type="checkbox" name="" id="" />
-        <button className='lg:text-[16px] '>Complete</button>
+        <input type="checkbox" name="" id=""/>
+        <button className='lg:text-[16px]'
+        onClick={''}
+        >Complete</button>
         </div>
         <p>
         <img 

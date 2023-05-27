@@ -5,12 +5,19 @@ const InputC = ({
     placeholder,
     width,
     Iheight,
-    type
+    type,
+    value,
+    handleInput,
+
 }) => {
+  
   return (
     <div className={`flex flex-col gap-1 ${width}`}>
         <label htmlFor="Task Name" className=''>{label}</label>
-        <input type={type} className={`flex bg-primaryblur border-none outline-none rounded-lg pl-2 ${Iheight}`} placeholder={placeholder} />
+        <input type= {type} className={`flex bg-primaryblur border-none outline-none rounded-lg pl-2 ${Iheight}`} placeholder={placeholder}
+        value={value}
+        onChange={handleInput}
+         />
     </div>
   )
 }
