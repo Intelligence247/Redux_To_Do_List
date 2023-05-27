@@ -1,27 +1,14 @@
 import React from 'react'
 import InputC from './InputC'
 import { useState } from 'react'
-const Top = () => {
-  const [input1, setinput1] = useState('')
-  const [input2, setinput2] = useState('')
-  const [input3, setinput3] = useState('')
-  const [input4, setinput4] = useState('')
+const Top = ({
+  handleInput1,input1,
+  handleInput2,input2,
+  handleInput3, input3,
+  handleInput4, input4,
+  handleClick,
+}) => {
 
-  const handleInput1 = (e) => {
-    setinput1(e.target.value)
-  }
-
-  const handleInput2 = (e) =>{
-    setinput2(e.target.value)
-  }
-
-  const handleInput3 = (e) =>{
-    setinput3(e.target.value)
-  }
-  const handleInput4 = (e) =>{
-    setinput4(e.target.value)
-  }
-  console.log(input1,input2,input3,input4)
   return (
     <div className='bg-primary px-4 flex flex-col gap-2 py-2 rounded-r-xl'> 
         <InputC
@@ -57,7 +44,9 @@ const Top = () => {
         value={input4}
         />
         <div className='w-full grid place-content-center'>
-<button className='bg-orange w-[7rem] h-[2rem] grid place-items-center rounded-xl'>Create Tast</button>
+<button className='bg-orange w-[7rem] h-[2rem] grid place-items-center rounded-xl'
+onClick={handleClick}
+>Create Tast</button>
 </div>
 <p className='errM text-red-500 text-center'>Input field must not be empty</p>
     </div>
