@@ -14,7 +14,7 @@ Clone or download this repository and run with a local server of open `index.htm
 - TailwindCSS
 ## Preview here
 
-[Go Live]()
+[Go Live](https://creative-gelato-39395b.netlify.app)
 ![screenshot](/public/media/sketch2.png)
 
 ## Contact

@@ -11,7 +11,6 @@ function App() {
   const [input2, setinput2] = useState('')
   const [input3, setinput3] = useState('')
   const [input4, setinput4] = useState('')
-  const [todos, setTodos] = useState([])
   const [errM, seterrM] = useState('')
 
 
@@ -29,13 +28,12 @@ function App() {
   const handleInput4 = (e) =>{
     setinput4(e.target.value)
   }
-  console.log(input1,input2,input3,input4)
  const todoArrList = useSelector((state)=> state)
 
   const handleClick = (e) =>{
     e.preventDefault();
     if(input1.length!==0 && input2.length!==0 && input3.length !== 0 && input4.length !== 0){
-    const todoObj= {
+    distpatch(addTask({
         taskName: input1,
         startTime: input2,
         endTime: input3,
@@ -43,12 +41,11 @@ function App() {
         id: Date.now(),
       delete: true,   
       isComplete: false,    
-    }
-// setinput1("")
-// setinput2("")
-// setinput3("")
-// setinput4("")
-  distpatch(addTask(todoObj))
+    }))
+setinput1("")
+setinput2("")
+setinput3("")
+setinput4("")
 seterrM('')
   }else{
 seterrM("All input field must not be empty")
@@ -91,8 +88,7 @@ distpatch(deleteTask(t))
         lineOver= {t.isComplete?"line-through":""}
         first={i==0?'hidden':'block'}
          />  
-         
-      ))}
+       ))}
     </div>
       </main>
     </div>
@@ -100,11 +96,3 @@ distpatch(deleteTask(t))
 }
 
 export default App
-
-
-/*  <h1>Counter</h1>
-        <p>{counter}</p>
-        <button onClick={() => distpatch(increase())}>increase</button>
-        <button onClick={() => distpatch(decrease())}>decrease</button>
-        <button onClick={() => distpatch(reset())}>reset</button>
-        <button onClick={() => distpatch(addtwo())}>AddTwo</button> */ 
