@@ -24,3 +24,7 @@ h1.title{
     @apply bg-primary rounded-full
 
 }
+
+*::selection{
+    @apply text-pink-500 bg-slate-600
+}

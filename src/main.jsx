@@ -1,4 +1,4 @@
-import React, { StrictMode } from 'react'
+import React from 'react'
 import ReactDOM, { createRoot } from 'react-dom/client'
 import App from './App'
 import './index.css'
@@ -13,6 +13,5 @@ root.render(
     <Provider store={store}>
     <App />
     </Provider>
-    <StrictMode/>
   </React.StrictMode>,
 )

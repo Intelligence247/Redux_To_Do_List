@@ -6,7 +6,7 @@ const Top = ({
   handleInput2,input2,
   handleInput3, input3,
   handleInput4, input4,
-  handleClick,
+  handleClick, Err
 }) => {
 
   return (
@@ -26,6 +26,8 @@ const Top = ({
             Iheight={'h-8'}
             handleInput={handleInput2}
             value={input2}
+        type={"time"}
+
             />
             <InputC 
             label={'End Time'}
@@ -34,6 +36,7 @@ const Top = ({
             width={"w-[45%]"}
             handleInput={handleInput3}
             value={input3}
+            type={"time"}
             />
         </div>
         <InputC
@@ -48,7 +51,7 @@ const Top = ({
 onClick={handleClick}
 >Create Tast</button>
 </div>
-<p className='errM text-red-500 text-center'>Input field must not be empty</p>
+<p className='errM text-red-500 text-center'>{Err}</p>
     </div>
   )
 }

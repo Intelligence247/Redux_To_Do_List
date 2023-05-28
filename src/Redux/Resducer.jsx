@@ -1,19 +1,4 @@
-    // export const counterReducer = (state=0, action) => {
-    //     switch (action.type) {
-    //         case "INCREMENT":
-    //             return state + 1;
-    //             case "DECREMENT":
-    //                 return state -1;
-    //                 case "RESET":
-    //                     return (state = 0)
-    //                     case "ADD2":
-    //                         return state+2
-    //                     default:
-    //                         return state;
-    //     };
-    // };
-
-import { ADD_TASK, COMPLETE_TASK, DELETE_TASK, completeTask } from "./Action";
+import { ADD_TASK, COMPLETE_TASK, DELETE_TASK } from "./Action";
 
 const taskArr = [
     {
@@ -22,9 +7,7 @@ const taskArr = [
         startTime: "9:00",
         endTime: "10:20",
         description: "Is Abdullahi babatunde",
-        isComplete: true,
-
-
+        isComplete: false,
     }
 ]
 
@@ -42,7 +25,7 @@ export const todoReducer = (state=taskArr, action)=> {
            let completeTask = [];
             state.map((item) => {
                 if (item.id === action.payload){
-                    item.isComplete = !(item.isComplete)
+                    item.isComplete = !item.isComplete;
                 }
                 completeTask.push(item)
             });
