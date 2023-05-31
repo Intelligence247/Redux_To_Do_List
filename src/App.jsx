@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Top from './Component/Top'
-import Bottom from './Component/Bottom'
 import Todo from './Component/Todo'
 import { useDispatch, useSelector } from 'react-redux'
 import { addTask, deleteTask, completeTask } from './Redux/Action'
@@ -42,10 +41,10 @@ function App() {
       delete: true,   
       isComplete: false,    
     }))
-setinput1("")
-setinput2("")
-setinput3("")
-setinput4("")
+// setinput1("")
+// setinput2("")
+// setinput3("")
+// setinput4("")
 seterrM('')
   }else{
 seterrM("All input field must not be empty")
@@ -73,7 +72,7 @@ distpatch(deleteTask(t))
     handleClick={handleClick}
     Err={errM}
     />
-   <div className='w-full px-4 overflow-y-auto overflow-x-hidden lg:h-[20rem] lg:max-[15rem]'>
+   <div className='w-full px-4 overflow-y-auto overflow-x-hidden lg:h-[20rem] lg:max-h-[15rem] lg:min-h-[15rem] min-h-[20rem]'>
     {todoArrList.map((t,i)=>(        
         <Todo
         key={t.id}

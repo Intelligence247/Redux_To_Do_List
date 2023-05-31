@@ -10,7 +10,7 @@
     @apply bg-[#faf1e3] h-screen w-screen grid place-items-center 
 }
 main{
-    @apply lg:w-[25rem] lg:h-[40rem] w-screen h-auto bg-white lg:rounded-[20px] lg:py-4 pt-4 shadow-lg shadow-primaryblur flex flex-col
+    @apply lg:w-[25rem] lg:h-[40rem] w-screen h-auto bg-white rounded-t-xl lg:py-4 pt-4 shadow-lg shadow-primaryblur flex flex-col pb-4 
 }
 
 h1.title{
